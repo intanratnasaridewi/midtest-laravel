@@ -36,4 +36,4 @@ Route::post('/loginadmin', [AdminController::class, 'authenticate']);
 // Route::get('/newpengaduan', [keluhanController::class, 'index']) ->middleware('auth');
 // Route::post('/pengaduan', [keluhanController::class, 'store'])->middleware('auth');
 Route::resource('/userpage',PengaduanController::class )->middleware('auth');
-Route::resource('/dashboard',PashboardController::class );
+Route::resource('/dashboard',DashboardController::class );
